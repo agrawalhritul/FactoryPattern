@@ -8,7 +8,13 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\Product\OperatingSystem.csproj" />
+    <Compile Remove="OperatingSystem\**" />
+    <EmbeddedResource Remove="OperatingSystem\**" />
+    <None Remove="OperatingSystem\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="OperatingSystem\OperatingSystem.csproj" />
   </ItemGroup>
 
 </Project>
